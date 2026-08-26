@@ -35,5 +35,5 @@
   <text x="600" y="168" font-family="'Segoe UI','PingFang SC','Microsoft YaHei',sans-serif" font-size="72" font-weight="700" fill="#ffffff" text-anchor="middle" letter-spacing="2">Ruffianjiang</text>
   <rect x="430" y="192" width="340" height="5" rx="2.5" fill="url(#accent)"/>
   <text x="600" y="246" font-family="'Segoe UI','PingFang SC','Microsoft YaHei',sans-serif" font-size="26" fill="#cbd5e1" text-anchor="middle">全栈工程师 · 技术管理者</text>
-  <text x="600" y="288" font-family="'Segoe UI','PingFang SC','Microsoft YaHei',sans-serif" font-size="20" fill="#93c5fd" text-anchor="middle">工业智能运维 · 大数据与实时计算 · 数据 × 世界模型</text>
+  <text x="600" y="288" font-family="'Segoe UI','PingFang SC','Microsoft YaHei',sans-serif" font-size="20" fill="#93c5fd" text-anchor="middle">工业智能运维 · 大数据与实时计算 · 云原生与 DevOps</text>
 </svg>
