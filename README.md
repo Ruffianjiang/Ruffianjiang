@@ -86,7 +86,7 @@
 ## 📫 联系方式
 
 - 🌐 技术博客：<https://ruffianjiang.github.io>
-- 📧 邮箱：<!-- 请替换为你的真实邮箱 --> `your-email@example.com`
+- 📧 邮箱：`jiangyj0516@outlook.com`
 - 🐙 GitHub：[@Ruffianjiang](https://github.com/Ruffianjiang)
 
 ---
