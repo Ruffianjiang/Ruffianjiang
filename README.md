@@ -4,8 +4,9 @@
     国内(中国大陆)若 raw.githubusercontent.com 访问不稳定，可将 SVG 改为可访问图床地址，
     或把 <img> 替换为国内可访问的镜像链接；其余徽章/文本不受影响。
   - 技术栈 / 数据徽章均使用 shields.io（相对更稳定），不依赖 Vercel 等海外 CDN。
-  - 底部 GitHub Stats 卡片来自 github-readme-stats（Vercel 托管），国内可能加载失败，属正常现象；
-    真实数据以上方 shields.io 徽章为准。
+  - 已移除 github-readme-stats 卡片：实测返回 HTTP 503，会渲染成破图。
+  - 自托管资源：assets/header.svg（横幅）、assets/skills.svg（技能条），
+    均由本仓库经 raw.githubusercontent.com 提供，不依赖第三方图床。
 -->
 
 <div align="center">
@@ -16,12 +17,12 @@
 
 <p align="center">
   <b>全栈工程师 · 技术管理者</b><br/>
-  长期深耕 <b>工业智能运维</b> 与 <b>大数据 / 实时计算</b> 领域，
+  长期深耕 <b>工业智能平台</b> 与 <b>大数据 / 实时计算</b> 领域，
   关注 <b>云原生</b> 与 <b>工程效能</b> 提升。
 </p>
 
 <p align="center">
-  <a href="https://github.com/Ruffianjiang?tab=repositories"><img alt="Repos" src="https://img.shields.io/badge/Repos-30+-blue?style=for-the-badge"/></a>
+  <a href="https://github.com/Ruffianjiang?tab=repositories"><img alt="Public Repos" src="https://img.shields.io/badge/Public%20Repos-25-blue?style=for-the-badge"/></a>
   <a href="https://ruffianjiang.github.io"><img alt="Blog" src="https://img.shields.io/badge/Blog-ruffianjiang.github.io-ff69b4?style=for-the-badge"/></a>
   <a href="#-联系方式"><img alt="Contact" src="https://img.shields.io/badge/Contact-Email-red?style=for-the-badge"/></a>
 </p>
@@ -42,6 +43,10 @@
   <img alt="Docker" src="https://img.shields.io/badge/Docker-2496ED?style=flat&logo=docker&logoColor=white"/>
 </p>
 
+<p align="center">
+  <img src="assets/skills.svg" alt="技术栈熟练度" width="88%" />
+</p>
+
 ---
 
 ## 🔭 当前在做
@@ -55,16 +60,46 @@
 
 ## 🚀 精选项目
 
-| 项目 | 说明 |
-|------|------|
-| 🔒 [`dubbo-start`](https://github.com/Ruffianjiang/dubbo-start) *(private)* | 基于 Dubbo 的微服务脚手架，已完成依赖安全治理（Dependabot 告警清零） |
-| 🟡 [`DataX`](https://github.com/Ruffianjiang/DataX) *(fork)* | 阿里大数据同步引擎，学习 + 二次开发 |
-| 🟢 [`flink-learning`](https://github.com/Ruffianjiang/flink-learning) *(fork)* | Flink 实时计算学习仓库 |
-| 🔵 [`x-springboot-web`](https://github.com/Ruffianjiang/x-springboot-web) | Spring Boot 3 + Vue 全栈实战 |
-| ☕ [`java4fun`](https://github.com/Ruffianjiang/java4fun) | Java 小工具 / 实践集合 ★7 |
-| 📝 [`ruffianjiang.github.io`](https://github.com/Ruffianjiang/ruffianjiang.github.io) | 技术博客（Hexo） |
+<table>
+  <tr>
+    <td width="50%" align="center">
+      <a href="https://github.com/Ruffianjiang/DataX"><b>🟡 DataX</b></a> <sub><i>fork</i></sub><br/>
+      <sub>阿里大数据同步引擎，学习 + 二次开发</sub><br/>
+      <img alt="stars" src="https://img.shields.io/github/stars/Ruffianjiang/DataX?style=social"/>
+    </td>
+    <td width="50%" align="center">
+      <a href="https://github.com/Ruffianjiang/flink-learning"><b>🟢 flink-learning</b></a> <sub><i>fork</i></sub><br/>
+      <sub>Flink 实时计算学习仓库</sub><br/>
+      <img alt="stars" src="https://img.shields.io/github/stars/Ruffianjiang/flink-learning?style=social"/>
+    </td>
+  </tr>
+  <tr>
+    <td width="50%" align="center">
+      <a href="https://github.com/Ruffianjiang/x-springboot-web"><b>🔵 x-springboot-web</b></a><br/>
+      <sub>Spring Boot 3 + Vue 全栈实战</sub><br/>
+      <img alt="stars" src="https://img.shields.io/github/stars/Ruffianjiang/x-springboot-web?style=social"/>
+    </td>
+    <td width="50%" align="center">
+      <a href="https://github.com/Ruffianjiang/java4fun"><b>☕ java4fun</b></a><br/>
+      <sub>Java 小工具 / 实践集合</sub><br/>
+      <img alt="stars" src="https://img.shields.io/github/stars/Ruffianjiang/java4fun?style=social"/>
+    </td>
+  </tr>
+  <tr>
+    <td width="50%" align="center">
+      <a href="https://ruffianjiang.github.io"><b>📝 ruffianjiang.github.io</b></a><br/>
+      <sub>技术博客（Hexo）</sub><br/>
+      <img alt="stars" src="https://img.shields.io/github/stars/Ruffianjiang/ruffianjiang.github.io?style=social"/>
+    </td>
+    <td width="50%" align="center">
+      <a href="https://github.com/Ruffianjiang/dubbo-start"><b>🔒 dubbo-start</b></a> <sub><i>private</i></sub><br/>
+      <sub>基于 Dubbo 的微服务脚手架，含前后端工程与依赖治理实践</sub><br/>
+      <img alt="private" src="https://img.shields.io/badge/private-not%20publicly%20visible-6e7681?style=flat-square"/>
+    </td>
+  </tr>
+</table>
 
-> 注：部分企业项目为私有仓库，未在本账号展示。
+> 注：部分企业项目为私有仓库，未在本账号展示。Star 数为 shields.io 动态获取，随仓库实时变化。
 
 ---
 
@@ -76,10 +111,17 @@
   <img alt="Commits" src="https://img.shields.io/github/commit-activity/m/Ruffianjiang?style=social"/>
 </p>
 
-<!-- 国内访问提示：下方 github-readme-stats 卡片由 Vercel 托管，国内可能加载失败，属正常现象；以上 shields.io 徽章可正常显示。 -->
 <p align="center">
-  <img alt="GitHub Stats" src="https://github-readme-stats.vercel.app/api?username=Ruffianjiang&show_icons=true&theme=tokyonight&hide_border=true&locale=cn"/>
+  <img alt="Last Commit" src="https://img.shields.io/github/last-commit/Ruffianjiang/Ruffianjiang?style=for-the-badge&label=Last%20Commit&color=2ea043"/>
+  <img alt="Issues Closed" src="https://img.shields.io/github/issues-closed/Ruffianjiang/Ruffianjiang?style=for-the-badge&label=Issues%20Closed&color=8957e5"/>
 </p>
+
+<!--
+  注：原 github-readme-stats 卡片（Vercel 托管）已移除。
+  实测该服务返回 HTTP 503（服务本身不可用，非仅国内网络问题），会渲染成破图；
+  且打字机动画、访客计数器、贡献热力图等同类组件均依赖 Vercel / 海外 CDN，
+  国内加载失败率高，故一律不采用。以上 shields.io 徽章实测可达，作为数据来源。
+-->
 
 ---
 
